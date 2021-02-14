@@ -1,6 +1,6 @@
 # bmCCdiff
 [[OSF](https://img.shields.io/badge/DOI%20-10.17605%2Fosf.io%2Fuh574-yellowgreen)](https://osf.io/7j9xe/)
-[[Funding](https://img.shields.io/badge/NIH-F31HD098796-blue)](https://grantome.com/grant/NIH/F31-HD098796-01)
+[![Funding](https://img.shields.io/badge/NIH-F31HD098796-blue)](https://grantome.com/grant/NIH/F31-HD098796-01)
 [![Twitter](https://img.shields.io/twitter/url/https/twitter.com/rinivarg.svg?style=social&label=@rinivarg)](https://twitter.com/rinivarg)
 
 This GitHub repository contains the data table and code for analysis for the manscript titled (as of 05/15/2020): **Corpus Callosal Microstructure Predicts Bimanual Motor Performance In Chronic Stroke Survivors.**
