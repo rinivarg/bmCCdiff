@@ -117,3 +117,7 @@ grid.text("faster", x = unit(c(0.065), "npc"), y = unit(c(0.2), "npc"), rot = 90
            gp = gpar(fontsize = 16,col = "dimgray"))
  grid.text("isotropic", x = unit(c(0.2), "npc"), y = unit(c(0.05), "npc"),
            gp = gpar(fontsize = 16,col = "dimgray"))
+           
+           
+           
+           
