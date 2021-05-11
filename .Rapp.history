@@ -1,0 +1,798 @@
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points.par=list(size=2,alpha = 0.4), line=c(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=2),line=c(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +   geom_point(aes(alpha = 0.4)) +                       #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +   geom_point(alpha = 0.4) +                       #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +   geom_point(alpha = 0.4) +                       #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,alpha = 0.4, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+newCols
+newcols
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE,alpha=0.4) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+new_cols <- c("#C874AE40", "#19264E40", "#7384CB40", "#C2D9F540", "#B8BA2F40")
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE,alpha=0.4) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=2),line=c(size=2.5,col=new_cols),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=2),line=list(size=2.5,col=new_cols),#
+                overlay = TRUE, gg = TRUE)
+fitted2 = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=0.1),line=c(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm")) + fitted2
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
++
+new_cols <- c("#C874AE", "#19264E", "#7384CB", "#C2D9F5", "#B8BA2F")
++ fitted2
+ls()
+save(m12)
+save(m12,'newRLMERmodel')
+save(m12,'newRLMERmodel.txt')
+fitted2
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=1),line=list(size=2.5,col=new_cols),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=1),line=c(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+new_cols <- c("#C874AE", "#19264E", "#7384CB", "#C2D9F5", "#B8BA2F")
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=1),line=c(size=2),#
+                overlay = TRUE, gg = TRUE)
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.25,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                      #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=1),line=c(size=2),#
+                overlay = TRUE, gg = TRUE)
+m12 = rlmer(log(mt) ~ FA_val + (FA_val:CC_region) + log(chronicity) + norm_ccVol +#
+            (1|CC_region:subjID), data = bmCC_le2)
+bmCC = read.csv("1_stroke_bmCC_corr.csv")#
+#
+# filtering out#
+bmCC  %>%#
+filter(strat=="bimanual") %>%#
+select(-c(IpPrAvg,IpDistAvg,CoPrAvg,CoDistAvg)) %>%#
+filter(taskC=="let") %>%#
+#
+{.->>bmCC_le}#
+#
+bmCC_le %>%#
+pivot_longer(cols = c("cc1","cc2","cc3","cc4","cc5"),"CC_region",values_to = "FA_val")%>%#
+{.->> bmCC_le2}#
+#
+head(bmCC_le2,10) %>% mutate_if(is.numeric, round, 3)#
+# TABLE 2#
+contrasts(factor(bmCC_le2$CC_region))#
+bmCC_le2$CC_region = relevel(factor(bmCC_le2$CC_region), ref = "cc3")#
+contrasts(factor(bmCC_le2$CC_region))#
+#
+m12 = rlmer(log(mt) ~ FA_val + (FA_val:CC_region) + log(chronicity) + norm_ccVol +#
+            (1|CC_region:subjID), data = bmCC_le2)
+p2 = list(size=2,alpha = 0.4)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=as.numeric(p2),line=c(size=2),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=as.numeric(unlist(p2)),line=c(size=2),#
+                overlay = TRUE, gg = TRUE)
+visreg(points=0.4)
+visreg(m12,points=0.4)
+visreg(m12,points=list(3,0.4))
+visreg(m12,points=c(3,0.4))
+visreg(m12,points=list(alpha=0.4))
+visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4))
+visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4),overlay=TRUE,gg=TRUE)
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+new_cols <- c("#7384CB", "#C874AE", "#19264E", "#C2D9F5", "#B8BA2F")
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+setFigThm = theme_pubclean() + #
+            theme(text = element_text(colour = "black",size=20), #
+                  plot.title = element_text(colour = "black",size = 25),#
+                  axis.ticks.length = unit(0.35,"cm"),#
+                  axis.line = element_line(colour = "black",size=0.75),#
+                  axis.ticks = element_line(colour = "black",size=0.75),#
+                  axis.text = element_text(colour = "black",size=20),#
+                  strip.text.x = element_text(size = 20),#
+                  legend.text=element_text(size=15),#
+                  legend.position="top")
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4),line = c(size=2),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.25,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points.par=list(size = 2,alpha=0.4),line = c(size=2),overlay=TRUE,gg=TRUE)
+fitted
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points.par=list(size = 2,alpha=0.4),line = c(size=2),overlay=TRUE,gg=TRUE) + geom_point(size=3, alpha=0.1, shape=16)
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4),line = c(size=2),overlay=TRUE,gg=TRUE) + geom_point(size=3, alpha=0.1, shape=16)
+fitted
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4),line = c(size=2),overlay=TRUE,gg=TRUE) + geom_point(aes(col=new_cols),size=3, alpha=0.1, shape=16)
+fitted
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4),line = c(size=2),overlay=TRUE,gg=TRUE) + geom_point(aes(col=new_cols),size=3, alpha=0.4)
+fitted
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fsf
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4),line = c(size=2),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+bmCC_le2$CC_region <- factor(bmCC_le2$CC_region, levels = c("cc1", "cc2", "cc3","cc4","cc5"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4),line = c(size=2),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc3", "cc1","cc2","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+new_cols <- c("#C874AE", "#19264E", "#7384CB", "#C2D9F5", "#B8BA2F")
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "Mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(alpha=0.4,size=2),line = c(size=2),overlay=TRUE,gg=TRUE)
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(size=2),line = c(size=2),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(alpha = 0.4, fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,alpha = 0.4, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols ,alpha = 0.4, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(alpha = I(0.4),fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region",points=list(size=2,alpha = I(0.4)),line = c(size=2),overlay=TRUE,gg=TRUE)
+ls()
+fitted = visreg(m12,xvar="FA_val",by="CC_region",cond=list(alpha = 0.4), points=list(size=2),line = c(size=2),overlay=TRUE,gg=TRUE)
+new_cols <- c("#C874AE", "#19264E", "#7384CB", "#C2D9F5", "#B8BA2F")
+new_cols2 <- c("#C874AE40", "#19264E40", "#7384CB40", "#C2D9F540", "#B8BA2F40")
+fitted = visreg(m12,xvar="FA_val",by="CC_region",cond=list(alpha = 0.4), points=list(size=2,col=new_cols2),line = c(size=2,new_cols),overlay=TRUE,gg=TRUE)
+fitted = visreg(m12,xvar="FA_val",by="CC_region",cond=list(alpha = 0.4), points=list(size=2,col=new_cols2),line = c(size=2,col=new_cols),overlay=TRUE,gg=TRUE)
+fitted = visreg(m12,xvar="FA_val",by="CC_region",cond=list(alpha = 0.4), points=list(col=new_cols2),line = c(col=new_cols),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values = new_cols2, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols2, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(size = 2, fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region", points=list(size = 2),line = c(size = 2),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha(0.4) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha(aes(0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region", points=list(size = 2),line = c(size = 2),overlay=TRUE,gg=TRUE) + scale_alpha(0.4)
+fitted
+fitted + scale_color_manual(values = new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_discrete(0.4) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols, name = "Region",aes(alpha = 0.4),#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = new_cols, name = "Region",aes(alpha = 0.4),#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_fill_manual(alpha = 0.4) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values = alpha(new_cols,0.4), name = "Region",aes(alpha = 0.4),#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region", points=list(size = 2),line = c(size = 2),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values = alpha(new_cols,0.4), name = "Region",aes(alpha = 0.4),#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted
+fitted + scale_color_manual(values = alpha(new_cols,0.4), name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region", points=alpha(col=new_cols),line = c(size = 2),overlay=TRUE,gg=TRUE)
+fitted = visreg(m12,xvar="FA_val",by="CC_region", points=list(size = 2),line = c(size = 2),overlay=TRUE,plot=FALSE,gg=TRUE)
+fitted + scale_color_manual(values =(new_cols), name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12,xvar="FA_val",by="CC_region", points=list(size = 2),line = c(size = 2),overlay=TRUE,gg=TRUE)
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+save(m12)
+save(m12,new1)
+save(RLMERMod,m12)
+save(m12,m12)
+save(m12, file = "my_model1.rda")
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=2,alpha = 0.4),line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(unlist(size=2,alpha = 0.4)),line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+a = list(size = 2,alpha = 0.4)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=as.numeric(unlist(a)),line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+class(unlist(a))
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=unlist(a),line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=c(2,0.4),line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",plot=FALSE)
+ls()
+ggplot(data=fitted)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=2),line=list(size=2.5,alpha = 1),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=2),line=c(size=2.5,alpha = 1),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=1.25),line=c(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=1.25),line=c(size=2),#
+                overlay = TRUE, gg = TRUE)
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + geom_point(col=new_cols,alpha = 0.3,size = 3)#
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + geom_point(col=new_cols,alpha = 0.3,size = 3) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + geom_point(alpha = 0.3,size = 3) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + geom_point(aes(new_cols),alpha = 0.3,size = 3) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + geom_point(alpha = 0.1,size = 3) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + geom_point(alpha = 0.01,size = 3) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + geom_point(alpha = 0.05,size = 4) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + geom_point(alpha = 0.05,size = 4) + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + geom_point(alpha = 0.5,size = 4) + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + geom_point(alpha = 0.5,size = 4)
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4),guide=F)#
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4),guide=F) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,3.75),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,4),expand = -0.01) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,4),expand = -0.01) + scale_y_continuous() + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,4),expand = -0.01) + scale_y_continuous(breaks = round(seq(1.35, 4, by = 0.05),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,4),expand = -0.01) + scale_y_continuous(breaks = round(seq(1.35, 4, by = 0.25),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.35,4),expand = -0.01) + scale_y_continuous(breaks = round(seq(1.5, 4, by = 0.25),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,4),expand = -0.01) + scale_y_continuous(breaks = round(seq(1.5, 4, by = 0.25),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.5,0.9),,ylim=c(1.5,4),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 4, by = 0.25),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.4,0.9),,ylim=c(1.5,4),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 4, by = 0.25),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.4,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.2),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.2),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + scale_alpha_manual(values=c(0.4, 0.4, 0.4,0.4,0.4)) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + geom_point(alpha = 0.4) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted + scale_color_manual(values =new_cols2, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE, points=list(size=2),#
+                line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted + scale_color_manual(values =new_cols2, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm")) + fitted
+u = fitted + scale_color_manual(values =new_cols2, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+u + fitted
+visregList(u,fitted)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE, points=list(size=2),#
+                line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted2 = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE, points=list(alpha=0.4),#
+                line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+visregList(fitted,fitted2)
+fitted2 = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE, points=listFromMlist(alpha=0.4,size=2),#
+                line=list(size=2.5),#
+                overlay = TRUE, gg = TRUE)
+fitted = visreg(m12, xvar = "FA_val", by = "CC_region",#
+                strip.names = FALSE,#
+                points=list(size=1.3),line=c(size=2.2),#
+                overlay = TRUE, gg = TRUE)
+u = fitted + scale_color_manual(values =new_cols2, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols2, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+library("grid")
+grid.text("Right", x = unit(c(0.075), "npc"), y = unit(c(0.9), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "#E93324"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "#E93324"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "darkgray"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc",rot=45),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "darkgray"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "darkgray",rot = 45))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "darkgray",rot = 45))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"), rot = 45,#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "darkgray"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "darkgray"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+grid.text("Faster", x = unit(c(0.065), "npc"), y = unit(c(0.1), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+grid.text("Faster", x = unit(c(0.065), "npc"), y = unit(c(0.2), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+grid.text("Isotropic", x = unit(c(0.2), "npc"), y = unit(c(0.065), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+grid.text("Isotropic", x = unit(c(0.2), "npc"), y = unit(c(0.05), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+grid.text("Isotropic", x = unit(c(0.8), "npc"), y = unit(c(0.05), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+grid.text("Faster", x = unit(c(0.065), "npc"), y = unit(c(0.2), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+grid.text("Isotropic", x = unit(c(0.2), "npc"), y = unit(c(0.05), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+grid.text("Anisotropic", x = unit(c(0.8), "npc"), y = unit(c(0.05), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bold",col = "dimgray"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"), rot = 90,#
+          gp = gpar(fontsize = 12,col = "dimgray"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+grid.text("Slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"), rot = 90,#
+          gp = gpar(fontsize = 14,col = "dimgray"))
+grid.text("Anisotropic", x = unit(c(0.8), "npc"), y = unit(c(0.05), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "bolditalic",col = "dimgray"))
+grid.text("Anisotropic", x = unit(c(0.8), "npc"), y = unit(c(0.05), "npc"),#
+          gp = gpar(fontsize = 16, fontface = "italic",col = "dimgray"))
+fitted + scale_color_manual(values =new_cols, name = "Region",#
+                                             labels = c("cc1", "cc2","cc3","cc4","cc5")) + #
+                           coord_cartesian(xlim = c(0.45,0.9),,ylim=c(1.5,3.8),expand = 0) + scale_y_continuous(breaks = round(seq(1.5, 3.8, by = 0.5),1)) + #
+                           labs(x = "mean FA", y = "bimanual MT\n(log-s)") +                          #
+                           guides(fill=FALSE) + setFigThm + theme(legend.position="right",#
+                                                                  plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm"))
+grid.text("faster", x = unit(c(0.065), "npc"), y = unit(c(0.2), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16, col = "dimgray"))
+grid.text("slower", x = unit(c(0.065), "npc"), y = unit(c(0.9), "npc"), rot = 90,#
+          gp = gpar(fontsize = 16,col = "dimgray"))
+grid.text("anisotropic", x = unit(c(0.8), "npc"), y = unit(c(0.05), "npc"),#
+          gp = gpar(fontsize = 16,col = "dimgray"))
+grid.text("isotropic", x = unit(c(0.2), "npc"), y = unit(c(0.05), "npc"),#
+          gp = gpar(fontsize = 16,col = "dimgray"))
+plot_model(m12)
+plot_model(m12, type = "pred", terms = c("FA_val","CC_region"))
+m12
+summary(m12)
+up21 = update(m12, . ~ . + ventr_ai + cst_ll + lesion_fa)
+tab_model(m12,up21)
+bmCC_le2$CC_region = relevel(factor(bmCC_le2$CC_region), ref = "cc3")#
+contrasts(factor(bmCC_le2$CC_region))
+up21 = update(m12, . ~ . + ventr_ai + cst_ll + lesion_fa)
+tab_model(m12,up21)
+dvNames1 = c('(Intercept)','Mean FA','log(Chronicity)','Total Norm. CC Volume',#
+             'FA: CC1','FA: CC2','FA: CC4','FA: CC5','Lat. Ventr. AI','CST Lesion Load','Lesion FA')
+tab_model(m12,up21,pred.labels=dvNames1)
+lrtest(m12,up21)
+library("lmtest")
+library("zoo")
+install.packages("zoo")
+library("zoo")
+lrtest(m12,up21)
+install.packages("lmtest")
+library("lmtest")
+lrtest(m12,up21)
+summary(up21)
+up21 = update(m12, . ~ . + ventr_ai + lesion_fa)
+summary(up21)
+tab_model(m12,up21,pred.labels=dvNames1)
+library("car")
+up21 = update(m12, . ~ . + ventr_ai + cst_ll + lesion_fa)
+vif(up21)
+vif(m12)
+cor.test(bmCC_le2$ventr_ai,bmCC_le2$cst_ll)
+cor.test(bmCC_le2$ventr_ai,bmCC_le2$cst_ll,method="spearman")
+cor.test(bmCC_le2$ventr_ai,bmCC_le2$cst_ll,method="Spearman")
+cor.test(bmCC_le2$ventr_ai,bmCC_le2$cst_ll,method="spearman")
+cor.test(bmCC_le$ventr_ai,bmCC_le$cst_ll,method="spearman")
+cor.test(bmCC_le$lesion_fa,bmCC_le$cst_ll,method="spearman")
+cor.test(bmCC_le$lesion_fa,bmCC_le$cst_ll)
+cor.test(bmCC_le$ventr_ai,bmCC_le$cst_ll)
+plot(bmCC_le$ventr_ai,bmCC_le$cst_ll)
+cor.test(bmCC_le$ventr_ai,bmCC_le$cst_ll,method='spearman')
+plot(bmCC_le$ventr_ai,bmCC_le$cst_ll)
+abline()
+abline(bmCC_le$ventr_ai,bmCC_le$cst_ll)
+summary(m12)
