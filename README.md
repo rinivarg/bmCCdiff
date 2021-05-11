@@ -12,5 +12,5 @@ This GitHub repository contains the data table and code for analysis for the man
 3) **Analysis code for viewing only:** 
     - To view a marked down version of the analysis code, download and open the html file [here](https://github.com/rinivarg/bmCCdiff/blob/main/bmCCdiff-FINAL.html).
 
-4) **Note** that some R libraries (e.g., sjPlot and robustLMER are incompatible with the R version used in the Jupyter notebook. So, for a more updated version of the regression analysis, please download the extra script to run these analyses [here]
+4) **Note** that some R libraries (e.g., sjPlot and robustLMER are incompatible with the R version used in the Jupyter notebook. So, for a more updated version of the regression analysis, please download the extra script to run these analyses [here](https://github.com/rinivarg/bmCCdiff/blob/main/sjPlot_tables_figs_v2.R)
 4) **Preprint:** 
