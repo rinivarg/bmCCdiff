@@ -8,6 +8,8 @@ This GitHub repository contains the data table and code for analysis for the man
 1) **Data:** [threeGrp_CC.csv](https://github.com/rinivarg/bmCCdiff/blob/main/2_threeGrp_CC.csv) & [stroke_bmCC_corr.csv](https://github.com/rinivarg/bmCCdiff/blob/main/1_stroke_bmCC_corr.csv)
 
 2) **Analysis code on Jupyter Notebook:** [bmCCdiff_Analysis_Code.ipynb](https://github.com/rinivarg/bmCCdiff/blob/main/bmCCdiff-FINAL.ipynb). 
+    - To interactively use Jupyter Notebooks you need to use an environment like Binder. 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rinivarg/bmCCdiff/HEAD)
 
 3) **Analysis code for viewing only:** 
     - To view a marked down version of the analysis code, download and open the html file [here](https://github.com/rinivarg/bmCCdiff/blob/main/bmCCdiff-FINAL.html).
