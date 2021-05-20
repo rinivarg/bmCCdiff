@@ -66,7 +66,7 @@ dvNames1 = c('(Intercept)','Mean FA','log(Chronicity)','Total Norm. CC Volume',
              'FA: CC1','FA: CC2','FA: CC4','FA: CC5','Lat. Ventr. AI','CST Lesion Load','Lesion FA')
 
 tab_model(m12,pred.label = dvNames0)
-
+summary(m12)
 
 up21 = update(m12, . ~ . + ventr_ai + cst_ll + lesion_fa)
 up22 = update(m12, . ~ . + cst_ll + ventr_ai)
