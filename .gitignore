@@ -3,3 +3,6 @@
 
 # temp Mac
 .DS_store
+
+#temp R
+.Rapp.history
