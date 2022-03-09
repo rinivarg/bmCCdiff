@@ -123,13 +123,13 @@ grid.text("faster", x = unit(c(0.065), "npc"), y = unit(c(0.2), "npc"), rot = 90
 #### July 29, 2021 -- AFTER COMMENTS FROM REVIEWERS
 # filtering out
 bmCC  %>%
-filter(strat=="unimanual") %>%
-select(-c(IpPrAvg,IpDistAvg,CoPrAvg,CoDistAvg)) %>%
+#filter(strat=="unimanual") %>%
+#select(-c(IpPrAvg,IpDistAvg,CoPrAvg,CoDistAvg)) %>%
 filter(taskC=="let") %>%
 
 {.->>bmCC_leU}
 
-bmCC_le %>%
+bmCC_leU %>%
 pivot_longer(cols = c("cc1","cc2","cc3","cc4","cc5"),"CC_region",values_to = "FA_val")%>%
 {.->> bmCC_leU2}
 
@@ -138,10 +138,50 @@ head(bmCC_leU2,10) %>% mutate_if(is.numeric, round, 3)
 
 # TABLE 2
 contrasts(factor(bmCC_leU2$CC_region))
-bmCC_leU2$CC_region = relevel(factor(bmCC_le2$CC_region), ref = "cc3")
+bmCC_leU2$CC_region = relevel(factor(bmCC_leU2$CC_region), ref = "cc3")
 contrasts(factor(bmCC_leU2$CC_region))
 
-m12_U = rlmer(log(mt) ~ FA_val + (FA_val:CC_region) + log(chronicity) + norm_ccVol +
+m12_U = rlmer(log(mt) ~ FA_val + (FA_val:strat) + (FA_val:CC_region) + log(chronicity) + norm_ccVol +
             (1|CC_region:subjID), data = bmCC_leU2)          
+ 
+dvNames2 = c('Intercept','Mean FA','Strategy [unimanual]','log(Chronicity)','Total Normalized CC Volume', 'Mean FA for Unimanual Strategy','Mean FA x CC1','Mean FA x CC2','Mean FA x CC4','Mean FA x CC5')
            
-tab_model(m12_U,pred.label = dvNames0)
+tab_model(m12_U,pred.label = dvNames2)
+
+# NEW FIGURE 3A
+plot_model(m12_U, type = "pred", terms = c("FA_val", "strat"),line.size = 2,title="") +
+coord_cartesian(xlim = c(0.35,1.03),ylim = c(0,50),expand = 0) +
+scale_color_manual(values =c("#54278f","black"), name = "Strategy",
+                            labels = c("bimanual", "unimanual")) +
+                            labs(x = "mean callosal FA", y = "MT (s)") +
+                            
+# scale_fill_manual(values =c("#54278f","black"), name = "Strategy",
+#                           labels = c("bimanual", "unimanual")) +
+#                            labs(x = "mean callosal FA", y = "MT (s)") +
+                            
+guides(fill="none") + setFigThm + theme(legend.position="top", plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm")) 
+grid.text("faster", x = unit(c(0.05), "npc"), y = unit(c(0.2), "npc"), rot = 90,
+           gp = gpar(fontsize = 16, col = "dimgray"))
+grid.text("slower", x = unit(c(0.05), "npc"), y = unit(c(0.75), "npc"), rot = 90,
+           gp = gpar(fontsize = 16,col = "dimgray"))
+grid.text("anisotropic", x = unit(c(0.9), "npc"), y = unit(c(0.05), "npc"),
+           gp = gpar(fontsize = 16,col = "dimgray"))
+grid.text("isotropic", x = unit(c(0.2), "npc"), y = unit(c(0.05), "npc"),
+           gp = gpar(fontsize = 16,col = "dimgray"))
+
+# NEW FIGURE 3B
+plot_model(m12_U, type = "pred", terms = c("FA_val","CC_region"),line.size = 2,title = "") + 
+coord_cartesian(xlim = c(0.35,1.03),ylim = c(0,50),expand = 0) +
+scale_color_manual(values =new_cols, name = "Region",
+                            labels = c("cc1", "cc2","cc3","cc4","cc5")) +
+                            labs(x = "mean callosal FA", y = "MT (s)") +
+                            
+guides(fill="none") + setFigThm + theme(legend.position="top", plot.margin = unit(c(0.1,0.1,0.25,0.25), "cm")) 
+grid.text("faster", x = unit(c(0.05), "npc"), y = unit(c(0.2), "npc"), rot = 90,
+           gp = gpar(fontsize = 16, col = "dimgray"))
+grid.text("slower", x = unit(c(0.05), "npc"), y = unit(c(0.75), "npc"), rot = 90,
+           gp = gpar(fontsize = 16,col = "dimgray"))
+grid.text("anisotropic", x = unit(c(0.9), "npc"), y = unit(c(0.05), "npc"),
+           gp = gpar(fontsize = 16,col = "dimgray"))
+grid.text("isotropic", x = unit(c(0.2), "npc"), y = unit(c(0.05), "npc"),
+           gp = gpar(fontsize = 16,col = "dimgray"))
